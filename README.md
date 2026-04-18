@@ -187,9 +187,9 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ---
 
-## 📜 License
-
-Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information.
+## 📜 Notice
+This project has no license. It is shared for **educational and learning purposes only**.
+Feel free to explore the code, but please do not redistribute or use it commercially without permission.
 
 ---
 
