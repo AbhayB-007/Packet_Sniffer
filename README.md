@@ -56,7 +56,7 @@ Capture, inspect, and analyze live network traffic on both Windows and Linux sys
 **Step 1** — Clone the repository or copy the source code into a file named `packet-sniffer-windows.py`
 
 ```bash
-git clone https://github.com/your-username/packet-sniffer.git
+git clone https://github.com/AbhayB-007/Packet_Sniffer.git
 ```
 
 **Step 2** — Open **Command Prompt as Administrator**
@@ -84,7 +84,7 @@ python packet-sniffer-windows.py
 **Step 1** — Clone the repository or copy the source code into a file named `packet-sniffer-linux.py`
 
 ```bash
-git clone https://github.com/your-username/packet-sniffer.git
+git clone https://github.com/AbhayB-007/Packet_Sniffer.git
 ```
 
 **Step 2** — Open a terminal in the directory where the file is saved
@@ -102,14 +102,42 @@ sudo python3 packet-sniffer-linux.py
 ## 📸 Sample Output
 
 ```
-=============================================
-  Source IP       : 192.168.1.5
-  Destination IP  : 142.250.80.46
-  Protocol        : TCP
-  Source Port     : 54312
-  Destination Port: 443
-  Data Length     : 128 bytes
-=============================================
+-----------------------------------------------------------------------------------------------
+                                 Sniffed Packet No. --> 1
+                                 Operating System --> Windows
+-----------------------------------------------------------------------------------------------
+Ethernet Frame :
+1). Destination MAC : 45:00:00:29:D6:9F
+2). Source MAC : 40:00:80:06:26:2D
+3). Protocol : 127
+-----------------------------------------------------------------------------------------------
+         -> IPv4 Packet:
+                 - 1). Version: 0
+                 - 2). Header Length: 0
+                 - 3). TTL: 211
+                 - 4). Protocol: 136
+                 - 5). Source: 234.36.81.211
+                 - 6). Target: 233.94.80.16
+         -> TCP Segment:
+                 - 1). Source Port: 1
+                 - 2). Destination Port: 32512
+                 - 3). Sequence: 119700
+                 - 4). Acknowledgment: 3548928209
+                 - Flags:
+                         - URG: 1,  ACK: 0,  PSH:0
+                         - RST: 1,  SYN: 0,  FIN:0
+         -> ICMP Packet:
+                 - 1). Type: 0
+                 - 2). Code: 1
+                 - 3). Checksum: 32512,
+                 - ICMP Data:
+                         \x00\x01\x7f\x00\x00\x01\xd3\x94\xd3\x88\x58\xd1\xea\x24\x51\xd3\xe9\x5e\x50
+                         \x10\x20\xfa\x6b\x91\x00\x00\x00
+         -> UDP Segment:
+                 - 1). Source Port: 1
+                 - 2). Destination Port: 32512
+                 - 3). Length: 54164
+-----------------------------------------------------------------------------------------------
 ```
 
 ---
